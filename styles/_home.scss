@@ -1,0 +1,109 @@
+.home{
+    &__container{
+        display: flex;
+        padding: 7rem 1rem;
+        row-gap: 40px;
+        position: relative;
+    }
+    &__content{
+        position: relative;
+        display: grid;
+        justify-content: center;
+    }
+    &__img{
+        width: 220px;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        color: var(--first-color);
+        position: absolute;
+        display: flex;
+        column-gap: 7px;
+        top: -32px;
+        right: 55px;
+        justify-self: center;
+        span:nth-child(2){
+            z-index: -1;
+        }
+        
+
+    }
+    &__tooltip{
+        position: absolute;
+        top: -8px;
+        right: 185px;
+        &-img{
+            width: 90px;
+        }
+        &-text{
+            position: absolute;
+            background: var(--gradient-color);
+            color: var(--white-color);
+            font-weight: var(--font-medium);
+            border-radius: 64px;
+            padding: 6px 12px;
+            font-size: var(--small-font-size);
+            transform: translate(60px,-40px);
+            white-space: nowrap;
+        }
+    }
+    &__social{
+        display: grid;
+        justify-content: center;
+        row-gap: 96px;
+        position: absolute;
+        top: 140px;
+        left: -24px;
+        &-text{
+            position: relative;
+            rotate: 90deg;
+            font-size: var(--small-font-size);
+           font-weight: var(--font-medium);
+           &::after{
+            content: "";
+            width: 48px;
+            height: 1px;
+            position: absolute;
+            background-color: var(--text-color);
+            top: 0;
+            bottom: 0;
+            right: -64px;
+            margin: auto;
+            
+           }
+
+        }
+        &-links{
+            display: grid;
+            row-gap: 12px;
+            margin-left: 22px;
+        }
+        &link{
+            color: var(--text-color);
+            font-size: 20px;
+            transition: color 0.4s;
+            cursor: pointer;
+            &:hover{
+                color: var(--first-color);
+            }
+        }
+    }
+    &__button{
+        justify-self: center;
+    }
+    .home__social-link{
+        color: var(--text-color);
+        &:hover{
+            color: var(--first-color);
+        }
+        
+    }
+    .home__title{
+        display: flex;
+        justify-content: center;
+    }
+    .home__tooltip-img{
+        width: initial;
+    }
+    
+}

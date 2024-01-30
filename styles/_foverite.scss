@@ -1,0 +1,13 @@
+.favorite{
+    text-align: center;
+    padding: 10px 40px;
+    &__card{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        div{
+            display: flex;
+            gap: 30px;
+        }
+    }
+}
